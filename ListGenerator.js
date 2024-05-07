@@ -144,7 +144,7 @@ function appendProxy(url) {
 
     // replace "files://" with "https://"
     url = url.replace('file://', 'https://');
-    var proxyserverurl = 'https://worker-cold-heart-4ce3.cliff-zhu.workers.dev/?url=';
+    var proxyserverurl = proxyserver;
     var authstring = "&auth=authcode";
 
     return proxyserverurl + url + authstring;
