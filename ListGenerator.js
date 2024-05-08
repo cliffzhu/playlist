@@ -163,7 +163,7 @@ document.getElementById('topic').addEventListener('input', function () {
 });
 
 // add an event listener to the form and call displayResults function
-document.getElementById('form').addEventListener('submit', async function (event) {
+document.getElementById('createplaylist').addEventListener('click', async function (event) {
     event.preventDefault();
 
     const baselink = "https://bbs.wenxuecity.com/bbs/archive.php?keyword="
