@@ -147,7 +147,7 @@
         var proxyserverurl = proxyserver;
         var authstring = "&auth=authcode";
 
-        return proxyserverurl + url + authstring;
+        return proxyserverurl + "?url=" + url + authstring;
     }
 
 
