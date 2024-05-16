@@ -21,7 +21,9 @@
 
         const results = [];
         const uniqueLinks = new Set();
-
+            // push current web page to uniqueLinks
+            uniqueLinks.add(window.location.href);
+            
         for (let element of elements) {
             if (xPath1.toLowerCase() === 'a') {
                 const href = element.href;
