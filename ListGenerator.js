@@ -23,7 +23,8 @@
         const uniqueLinks = new Set();
             // push current web page to uniqueLinks
             uniqueLinks.add(window.location.href);
-            console.log(window.location.href);
+            // replace /bbs/ with / in the href and push to uniqueLinks
+            uniqueLinks.add(window.location.href.replace('/bbs/', '/'));
 
         for (let element of elements) {
             if (xPath1.toLowerCase() === 'a') {
